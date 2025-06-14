@@ -1,4 +1,5 @@
 .vault.csv
+.vscode
 *.o
 *.exe
 run.sh
