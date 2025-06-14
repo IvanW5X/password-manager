@@ -2,17 +2,15 @@
 
 #include "account.h"
 
-Account::Account() {
-  std::cout << "Account Created with no data\n";
-}
+Account::Account() { std::cout << "Account Created with no data!\n"; }
 
 Account::Account(std::string service, std::string username, std::string password)
     : _service(service), _username(username), _password(password) {}
 
 void Account::printAccountInfo() const {
-    std::cout << "Service: " << this->_service << "\n"
-              << "Username: " << this->_username << "\n"
-              << "Password: " << this->_password << "\n";
+  std::cout << "Service: " << this->_service << "\n"
+            << "Username: " << this->_username << "\n"
+            << "Password: " << this->_password << "\n";
 }
 
 void Account::updateService(std::string service) {

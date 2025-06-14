@@ -8,7 +8,7 @@ default: prog.exe
 account.o: account.cpp account.h
 	$(CC) $(FLAGS) -c account.cpp
 
-password-manager.o: password-manager.cpp password-manager.h
+password-manager.o: account.o password-manager.cpp password-manager.h
 	$(CC) $(FLAGS) -c password-manager.cpp
 
 prog.exe: account.o password-manager.o prog.cpp
