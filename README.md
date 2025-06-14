@@ -1,1 +1,5 @@
-# password-manager
+# Password Manager Example Program
+
+## Authors
+
+* Ivan Wong
