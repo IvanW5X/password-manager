@@ -13,7 +13,10 @@ public:
   Account();
   Account(std::string service, std::string username, std::string password);
   void printAccountInfo() const;
-  void updateService(std::string service);
-  void updateUsername(std::string username);
-  void updatePassword(std::string password);
+  void setService(std::string service);
+  void setUsername(std::string username);
+  void setPassword(std::string password);
+  std::string getService() const;
+  std::string getUsername() const;
+  std::string getPassword() const;
 };

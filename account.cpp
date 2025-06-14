@@ -13,17 +13,22 @@ void Account::printAccountInfo() const {
             << "Password: " << this->_password << "\n";
 }
 
-void Account::updateService(std::string service) {
+void Account::setService(std::string service) {
   if (service != this->_service)
     this->_service = service;
 }
 
-void Account::updateUsername(std::string username) {
+void Account::setUsername(std::string username) {
   if (username != this->_username)
     this->_username = username;
 }
 
-void Account::updatePassword(std::string password) {
+void Account::setPassword(std::string password) {
   if (password != this->_password)
     this->_password = password;
 }
+
+// Getters
+std::string Account::getService() const { return this->_service; }
+std::string Account::getUsername() const { return this->_username; }
+std::string Account::getPassword() const { return this->_password; }
