@@ -17,5 +17,8 @@ password-manager.o: utils.o account.o password-manager.cpp password-manager.h
 prog.exe: utils.o account.o password-manager.o prog.cpp
 	$(CC) $(FLAGS) -o prog.exe prog.cpp utils.o account.o password-manager.o
 
+test.exe: utils.o account.o password-manager.o prog.cpp
+	$(CC) $(FLAGS) -o test.exe test.cpp utils.o account.o password-manager.o
+
 clean:
 	rm -f *.o prog.exe
